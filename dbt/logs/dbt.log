@@ -1,0 +1,86 @@
+[0m01:19:24.708936 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1061c61c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110897f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110897be0>]}
+
+
+============================== 01:19:24.722063 | 794f2d17-ab72-43fc-94f0-728fd6f49359 ==============================
+[0m01:19:24.722063 [info ] [MainThread]: Running with dbt=1.8.4
+[0m01:19:24.722732 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/yuta.hishinuma/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt init', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m01:19:24.732701 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/Users/yuta.hishinuma/.dbt')}
+[0m01:19:24.733005 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m01:20:02.457339 [debug] [MainThread]: Starter project path: /Users/yuta.hishinuma/projects/2024intern/dbt/venv/lib/python3.9/site-packages/dbt/include/starter_project
+[0m01:20:02.467775 [info ] [MainThread]: 
+Your new dbt project "project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m01:20:02.468303 [info ] [MainThread]: Setting up your profile.
+[0m01:24:32.935441 [error] [MainThread]: Encountered an error:
+
+[0m01:24:32.957437 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/yuta.hishinuma/projects/2024intern/dbt/venv/lib/python3.9/site-packages/dbt/cli/requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/Users/yuta.hishinuma/projects/2024intern/dbt/venv/lib/python3.9/site-packages/dbt/cli/requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/yuta.hishinuma/projects/2024intern/dbt/venv/lib/python3.9/site-packages/dbt/cli/main.py", line 470, in init
+    results = task.run()
+  File "/Users/yuta.hishinuma/projects/2024intern/dbt/venv/lib/python3.9/site-packages/dbt/task/init.py", line 347, in run
+    self.setup_profile(profile_name)
+  File "/Users/yuta.hishinuma/projects/2024intern/dbt/venv/lib/python3.9/site-packages/dbt/task/init.py", line 263, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "/Users/yuta.hishinuma/projects/2024intern/dbt/venv/lib/python3.9/site-packages/dbt/task/init.py", line 180, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "/Users/yuta.hishinuma/projects/2024intern/dbt/venv/lib/python3.9/site-packages/dbt/task/init.py", line 164, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "/Users/yuta.hishinuma/projects/2024intern/dbt/venv/lib/python3.9/site-packages/dbt/task/init.py", line 117, in generate_target_from_input
+    target = self.generate_target_from_input(
+  File "/Users/yuta.hishinuma/projects/2024intern/dbt/venv/lib/python3.9/site-packages/dbt/task/init.py", line 130, in generate_target_from_input
+    target[key] = click.prompt(
+  File "/Users/yuta.hishinuma/projects/2024intern/dbt/venv/lib/python3.9/site-packages/click/termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+  File "/Users/yuta.hishinuma/projects/2024intern/dbt/venv/lib/python3.9/site-packages/click/termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m01:24:32.960030 [debug] [MainThread]: Resource report: {"command_name": "init", "command_wall_clock_time": 308.48053, "process_user_time": 0.8887, "process_kernel_time": 0.197238, "process_mem_max_rss": "112574464", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m01:24:32.960697 [debug] [MainThread]: Command `dbt init` failed at 01:24:32.960589 after 308.48 seconds
+[0m01:24:32.961087 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1061c61c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1116af850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1116afdf0>]}
+[0m01:24:32.961444 [debug] [MainThread]: Flushing usage events
+[0m01:24:42.831238 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x101c620a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103715ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1037151c0>]}
+
+
+============================== 01:24:42.833301 | 82db24db-054a-492a-ad4c-3b00014702d8 ==============================
+[0m01:24:42.833301 [info ] [MainThread]: Running with dbt=1.8.4
+[0m01:24:42.833565 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/yuta.hishinuma/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt init', 'send_anonymous_usage_stats': 'True'}
+[0m01:24:48.110919 [debug] [MainThread]: Starter project path: /Users/yuta.hishinuma/projects/2024intern/dbt/venv/lib/python3.9/site-packages/dbt/include/starter_project
+[0m01:24:48.125157 [info ] [MainThread]: 
+Your new dbt project "project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m01:24:48.125455 [info ] [MainThread]: Setting up your profile.
+[0m01:28:53.494654 [info ] [MainThread]: Profile project written to /Users/yuta.hishinuma/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m01:28:53.498272 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 250.70467, "process_user_time": 0.634945, "process_kernel_time": 0.135812, "process_mem_max_rss": "109772800", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m01:28:53.499306 [debug] [MainThread]: Command `dbt init` succeeded at 01:28:53.499132 after 250.71 seconds
+[0m01:28:53.499915 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x101c620a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1036e0880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1037976d0>]}
+[0m01:28:53.500708 [debug] [MainThread]: Flushing usage events
