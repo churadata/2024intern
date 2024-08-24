@@ -4,6 +4,7 @@
 provider "registry.terraform.io/snowflake-labs/snowflake" {
   version = "0.94.1"
   hashes = [
+    "h1:3DXaaNpa6Azm0tHTWleudawvhODtfMwYkPwYAfBOSE4=",
     "h1:Ah3fZP+LE98ddPvOcZikfQce3wVN2m5Btut6EQ1/4gU=",
     "zh:04948cad4856f98ec6578bd9dcd7297621784c98bc87fcf09e3fa5cf8a7f400f",
     "zh:179a57af0fba19e484cadf54f7c20d06d9bc7a2b7f392b403926c73a1f943682",
