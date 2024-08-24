@@ -1,0 +1,4 @@
+packages:
+  - git: https://github.com/dbt-labs/dbt-utils.git
+    revision: 9237ba9ab060870d23f4f0d14a8df2ab28d0b387
+sha1_hash: e9d177746f04ee3df498a18aaddc7053e3d1268e

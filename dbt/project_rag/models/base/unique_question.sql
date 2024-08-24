@@ -1,0 +1,4 @@
+SELECT DISTINCT
+    QUESTION, ANSWERS
+FROM
+    {{ source("public", "RAG_SOURCE_FROM_PARQUET") }}
