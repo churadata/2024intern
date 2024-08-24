@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "churadata-2024intern-de"
+version = "0.1.0"
+description = ""
+authors = ["Churadata"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+dbt-core = "^1.8.5"
+dbt-snowflake = "^1.8.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
