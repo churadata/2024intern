@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
       &&  apt-get update \
       && apt-get install terraform \
       && if [ "$(uname -m)" = "aarch64" ]; then \
-        curl "https://awscli.amazonaws.com/awscli-exe-linux-aarch64.zip" -o "awscliv2.zip"; \
+        curl "https://awscli.amazonaws.com/awscli-exe-linux-aarch64.zip" -o "awsclliv2.zip"; \
       elif [ "$(uname -m)" = "x86_64" ]; then \
         curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"; \
       fi \
