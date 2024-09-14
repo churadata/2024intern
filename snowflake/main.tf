@@ -8,4 +8,5 @@ resource "snowflake_stage" "preset_stage" {
   database    = "INTERN_${local.name}_DB"
   schema      = "PUBLIC"
   storage_integration = "S3_INT"
+  depends_on = [ snowflake_database.preset_db ]
 }
