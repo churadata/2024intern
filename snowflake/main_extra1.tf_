@@ -11,8 +11,8 @@ resource "snowflake_stage" "preset_stage" {
   depends_on = [snowflake_database.preset_db]
 }
 
-# エクストラ問題
-resource "snowflake_stage" "preset_stage2" {
+# エクストラ問題①
+resource "snowflake_stage" "extra_stage" {
   name        = "INTERN_${local.name2}_STAGE"
   url         = "s3://2024-intern-${local.name2}/"
   database    = "INTERN_${local.name}_DB"
